@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"nlms_module_1tap": {
+			"proto_instances": {
+			}
+		}
+	}
+}

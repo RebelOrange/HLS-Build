@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="nlms.cpp" path="/home/user/rfdev/hls-build/adaptive_fitler/nlms.cpp"/>
+    <originFiles name="fir_filter.h" path="/home/user/rfdev/hls-build/adaptive_fitler/fir_filter.h"/>
+    <originFiles name="adaptive_filter.h" path="/home/user/rfdev/hls-build/adaptive_fitler/adaptive_filter.h"/>
+  </source>
+  <testbench>
+    <originFiles name="adaptive_filter_tb.cpp" path="/home/user/rfdev/hls-build/adaptive_fitler/adaptive_filter_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

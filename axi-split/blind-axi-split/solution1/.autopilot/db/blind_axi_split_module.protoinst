@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"blind_axi_split_module": {
+			"proto_instances": {
+			}
+		}
+	}
+}

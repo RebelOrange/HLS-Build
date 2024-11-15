@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="blind-axi-split.h" path="/home/user/rfdev/hls-build/axi-split/blind-axi-split.h"/>
+    <originFiles name="blind-axi-split.cpp" path="/home/user/rfdev/hls-build/axi-split/blind-axi-split.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="dummy_tb.cpp" path="/home/user/rfdev/hls-build/axi-split/dummy_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
