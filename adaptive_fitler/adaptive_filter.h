@@ -3,7 +3,7 @@
 #include "hls_math.h"
 
 // filter order
-#define N 1
+#define N 3
 #define E 1
 
 // define weight types

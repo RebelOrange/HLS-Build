@@ -10,7 +10,7 @@
 <Part>xc7z020-clg484-3</Part>
 <TopModelName>nlms_module_1tap</TopModelName>
 <TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>1.35</ClockUncertainty>
+<ClockUncertainty>0.05</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
@@ -19,29 +19,29 @@
 <PipelineType>yes(flp)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.911</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.892</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>86</Best-caseLatency>
-<Average-caseLatency>86</Average-caseLatency>
-<Worst-caseLatency>86</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.430 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.430 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.430 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>86</PipelineInitiationInterval>
-<PipelineDepth>87</PipelineDepth>
-<Interval-min>86</Interval-min>
-<Interval-max>86</Interval-max>
+<Best-caseLatency>82</Best-caseLatency>
+<Average-caseLatency>82</Average-caseLatency>
+<Worst-caseLatency>82</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.410 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.410 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.410 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>15</PipelineInitiationInterval>
+<PipelineDepth>83</PipelineDepth>
+<Interval-min>15</Interval-min>
+<Interval-max>15</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
+<DSP>134</DSP>
+<FF>19656</FF>
+<LUT>13830</LUT>
 <BRAM_18K>0</BRAM_18K>
-<DSP>68</DSP>
-<FF>13499</FF>
-<LUT>10057</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

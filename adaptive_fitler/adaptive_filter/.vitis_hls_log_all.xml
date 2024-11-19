@@ -3,36 +3,16 @@
   <errorLogs>
     <logs>
       <synLog/>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_0' is power-on initialization." projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:54.148-0800" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_0' is power-on initialization." projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:53.796-0800" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_1' is power-on initialization." projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:53.785-0800" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_1' is power-on initialization." projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:53.769-0800" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_imag_V_0' is power-on initialization." projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:53.755-0800" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_real_V_0' is power-on initialization." projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:53.751-0800" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_2' is power-on initialization." projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:53.743-0800" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_2' is power-on initialization." projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:53.731-0800" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_imag_V_1' is power-on initialization." projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:53.722-0800" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_real_V_1' is power-on initialization." projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:53.712-0800" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:53.663-0800" type="Warning"/>
-        <logs message="WARNING: [HLS 200-880] The II Violation in module 'nlms_module' (function 'nlms_module'): Unable to enforce a carried dependence constraint (II = 19, distance = 1, offset = 0) between 'store' operation ('lms_weights_imag_V_1_write_ln717') of variable 'select_ln340_12' on static variable 'lms_weights_imag_V_1' and 'load' operation ('lms_weights_imag_V_1_load') on static variable 'lms_weights_imag_V_1'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-880.html" projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:48.776-0800" type="Warning"/>
-        <logs message="WARNING: [HLS 200-880] The II Violation in module 'nlms_module' (function 'nlms_module'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_1_write_ln717') of variable 'select_ln340_11' on static variable 'lms_weights_real_V_1' and 'load' operation ('lms_weights_real_V_1_load') on static variable 'lms_weights_real_V_1'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-880.html" projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:48.547-0800" type="Warning"/>
-        <logs message="WARNING: [HLS 200-880] The II Violation in module 'nlms_module' (function 'nlms_module'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_1_write_ln717') of variable 'select_ln340_11' on static variable 'lms_weights_real_V_1' and 'load' operation ('lms_weights_real_V_1_load') on static variable 'lms_weights_real_V_1'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-880.html" projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:48.429-0800" type="Warning"/>
-        <logs message="WARNING: [HLS 200-880] The II Violation in module 'nlms_module' (function 'nlms_module'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_1_write_ln717') of variable 'select_ln340_11' on static variable 'lms_weights_real_V_1' and 'load' operation ('lms_weights_real_V_1_load') on static variable 'lms_weights_real_V_1'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-880.html" projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:48.415-0800" type="Warning"/>
-        <logs message="WARNING: [HLS 200-880] The II Violation in module 'nlms_module' (function 'nlms_module'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_1_write_ln717') of variable 'select_ln340_11' on static variable 'lms_weights_real_V_1' and 'load' operation ('lms_weights_real_V_1_load') on static variable 'lms_weights_real_V_1'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-880.html" projectName="adaptive_filter" solutionName="solution1" date="2024-11-09T17:31:48.406-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_0' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_1tap" date="2024-11-17T22:38:50.731-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_0' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_1tap" date="2024-11-17T22:38:50.408-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_1' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_1tap" date="2024-11-17T22:38:50.397-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_1' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_1tap" date="2024-11-17T22:38:50.388-0800" type="Warning"/>
       </synLog>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

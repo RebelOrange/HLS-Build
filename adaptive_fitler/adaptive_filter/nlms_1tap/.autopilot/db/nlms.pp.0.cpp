@@ -57121,9 +57121,9 @@ class adaptive_filter {
 private:
 
 protected:
- sc16 aux_reg[1];
- weight_T weights_real[1];
- weight_T weights_imag[1];
+ sc16 aux_reg[3];
+ weight_T weights_real[3];
+ weight_T weights_imag[3];
 
  error_T error_real;
  error_T error_imag;
@@ -57155,13 +57155,13 @@ error_T_cplx adaptive_filter::filter_fix(sc16 input){
  accum_imag = 0;
 
 
- fir_loop: for(int i=1 -1; i >=0; i--){
+ fir_loop: for(int i=3 -1; i >=0; i--){
   if(i==0){
    data = input;
    aux_reg[0] = input;
   } else {
    data = aux_reg[i-1];
-   if (i!=(1 -1))
+   if (i!=(3 -1))
     aux_reg[i] = aux_reg[i-1];
   }
   accum_real += data.real()*weights_real[i] - data.imag()*(-weights_imag[i]);
@@ -57175,7 +57175,7 @@ error_T_cplx adaptive_filter::filter_fix(sc16 input){
 
 void adaptive_filter::update_weights(error_T error_real, error_T error_imag){
 #pragma HLS INLINE
- updateWeightLoop: for (int i=0; i <1; i++){
+ updateWeightLoop: for (int i=0; i <3; i++){
   weights_real[i] += mu*(aux_reg[i].real()*error_real + aux_reg[i].imag()*error_imag);
   weights_imag[i] += mu*(aux_reg[i].imag()*error_real - aux_reg[i].real()*error_imag);
  }
@@ -57191,7 +57191,7 @@ void adaptive_filter::update_weights_normalized(error_T error_real, error_T erro
 
   mu_effective = hls::divide((inner_prod) 1, innerP);
 
- updateWeightLoop: for (int i=0; i <1; i++){
+ updateWeightLoop: for (int i=0; i <3; i++){
   weights_real[i] += mu*mu_effective*(aux_reg[i].real()*error_real + aux_reg[i].imag()*error_imag);
   weights_imag[i] += mu*mu_effective*(aux_reg[i].imag()*error_real - aux_reg[i].real()*error_imag);
  }

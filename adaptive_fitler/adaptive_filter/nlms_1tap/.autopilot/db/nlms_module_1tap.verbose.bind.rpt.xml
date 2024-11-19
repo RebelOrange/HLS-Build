@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'nlms_module_1tap'" level="0">
-<item name = "Date">Tue Nov 12 08:37:52 2024
+<item name = "Date">Sun Nov 17 22:38:47 2024
 </item>
 <item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)</item>
 <item name = "Project">adaptive_filter</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.911 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 4.892 ns, 50.00 ps</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">86, 86, 0.430 us, 0.430 us, 86, 86, yes(flp)</column>
+<column name="">82, 82, 0.410 us, 0.410 us, 15, 15, yes(flp)</column>
 </table>
 </item>
 <item name = "Detail">
