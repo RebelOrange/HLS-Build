@@ -42,6 +42,11 @@
 			<location>/home/user/rfdev/hls-build/adaptive_fitler/adaptive_filter/nlms_1tap/.tcls</location>
 		</link>
 		<link>
+			<name>nlms_3tap/constraints</name>
+			<type>2</type>
+			<location>/home/user/rfdev/hls-build/adaptive_fitler/adaptive_filter/nlms_3tap/.tcls</location>
+		</link>
+		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/home/user/rfdev/hls-build/adaptive_fitler/adaptive_filter/solution1/.tcls</location>
@@ -67,11 +72,6 @@
 			<location>/home/user/rfdev/hls-build/adaptive_fitler/adaptive_filter_tb.cpp</location>
 		</link>
 		<link>
-			<name>nlms_1tap/constraints/.xml.directive</name>
-			<type>1</type>
-			<location>/home/user/rfdev/hls-build/adaptive_fitler/adaptive_filter/nlms_1tap/nlms_1tap.directive</location>
-		</link>
-		<link>
 			<name>nlms_1tap/constraints/directives.tcl</name>
 			<type>1</type>
 			<location>/home/user/rfdev/hls-build/adaptive_fitler/adaptive_filter/nlms_1tap/directives.tcl</location>
@@ -80,6 +80,21 @@
 			<name>nlms_1tap/constraints/script.tcl</name>
 			<type>1</type>
 			<location>/home/user/rfdev/hls-build/adaptive_fitler/adaptive_filter/nlms_1tap/script.tcl</location>
+		</link>
+		<link>
+			<name>nlms_3tap/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/home/user/rfdev/hls-build/adaptive_fitler/adaptive_filter/nlms_3tap/nlms_3tap.directive</location>
+		</link>
+		<link>
+			<name>nlms_3tap/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/home/user/rfdev/hls-build/adaptive_fitler/adaptive_filter/nlms_3tap/directives.tcl</location>
+		</link>
+		<link>
+			<name>nlms_3tap/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/home/user/rfdev/hls-build/adaptive_fitler/adaptive_filter/nlms_3tap/script.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>

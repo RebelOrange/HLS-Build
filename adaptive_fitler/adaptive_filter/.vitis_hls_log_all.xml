@@ -8,10 +8,26 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_0' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_1tap" date="2024-11-17T22:38:50.731-0800" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_0' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_1tap" date="2024-11-17T22:38:50.408-0800" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_1' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_1tap" date="2024-11-17T22:38:50.397-0800" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_1' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_1tap" date="2024-11-17T22:38:50.388-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_0' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:49.428-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_0' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:48.208-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_1' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:48.177-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_1' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:48.164-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_imag_V_0' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:48.138-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_real_V_0' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:48.090-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_2' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:48.062-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_2' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:48.038-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_imag_V_1' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:48.025-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_real_V_1' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:48.008-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_3' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:47.989-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_3' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:47.972-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_imag_V_2' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:47.944-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_real_V_2' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:47.917-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_4' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:47.891-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_4' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:47.863-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_imag_V_3' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:47.842-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_real_V_3' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:47.826-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_5' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:47.817-0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_5' is power-on initialization." projectName="adaptive_filter" solutionName="nlms_3tap" date="2024-12-21T04:40:47.796-0800" type="Warning"/>
       </synLog>
     </logs>
   </warningLogs>

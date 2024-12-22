@@ -3,16 +3,16 @@
 #include "hls_math.h"
 
 // filter order
-#define N 3
+ #define N 11
 #define E 1
 
 // define weight types
-typedef ap_fixed<64, 32, AP_TRN, AP_SAT> weight_T;
+ typedef ap_fixed<32+32, 32, AP_TRN, AP_SAT> weight_T;
 typedef std::complex<weight_T> weight_T_cplx;
 
 // error types
 // typedef sc16 error_cplx;
-typedef ap_fixed<64, 32, AP_TRN, AP_SAT> error_T;
+ typedef ap_fixed<32+32, 32, AP_TRN, AP_SAT> error_T;
 typedef std::complex<error_T> error_T_cplx;
 
 // inner product normalization types
@@ -86,11 +86,38 @@ void adaptive_filter::update_weights(error_T error_real, error_T error_imag){
 
 void adaptive_filter::update_weights_normalized(error_T error_real, error_T error_imag){
 #pragma HLS INLINE
+	inner_prod innerP;
 
-	 inner_prod innerP = aux_reg[0].real()*aux_reg[0].real() + aux_reg[0].imag()*aux_reg[0].imag()
-			 + aux_reg[1].real()*aux_reg[1].real() + aux_reg[1].imag()*aux_reg[1].imag()
-			 + aux_reg[2].real()*aux_reg[2].real() + aux_reg[2].imag()*aux_reg[2].imag();
+	if (N==2){
+	 innerP = aux_reg[0].real()*aux_reg[0].real() + aux_reg[0].imag()*aux_reg[0].imag();
+	} else if (N==3) {
+		  innerP = aux_reg[0].real()*aux_reg[0].real() + aux_reg[0].imag()*aux_reg[0].imag()
+				 + aux_reg[1].real()*aux_reg[1].real() + aux_reg[1].imag()*aux_reg[1].imag();
 
+	} else if (N==4) {
+		  innerP = aux_reg[0].real()*aux_reg[0].real() + aux_reg[0].imag()*aux_reg[0].imag()
+				 + aux_reg[1].real()*aux_reg[1].real() + aux_reg[1].imag()*aux_reg[1].imag()
+				 + aux_reg[2].real()*aux_reg[2].real() + aux_reg[2].imag()*aux_reg[2].imag();
+
+	} else if (N==5) {
+		  innerP = aux_reg[0].real()*aux_reg[0].real() + aux_reg[0].imag()*aux_reg[0].imag()
+				 + aux_reg[1].real()*aux_reg[1].real() + aux_reg[1].imag()*aux_reg[1].imag()
+				 + aux_reg[2].real()*aux_reg[2].real() + aux_reg[2].imag()*aux_reg[2].imag()
+				 + aux_reg[3].real()*aux_reg[3].real() + aux_reg[3].imag()*aux_reg[3].imag();
+
+	} else if (N==11) {
+		 innerP = aux_reg[0].real()*aux_reg[0].real() + aux_reg[0].imag()*aux_reg[0].imag()
+				 + aux_reg[1].real()*aux_reg[1].real() + aux_reg[1].imag()*aux_reg[1].imag()
+				 + aux_reg[2].real()*aux_reg[2].real() + aux_reg[2].imag()*aux_reg[2].imag()
+				 + aux_reg[3].real()*aux_reg[3].real() + aux_reg[3].imag()*aux_reg[3].imag()
+		 + aux_reg[4].real()*aux_reg[4].real() + aux_reg[4].imag()*aux_reg[4].imag()
+		 + aux_reg[5].real()*aux_reg[5].real() + aux_reg[5].imag()*aux_reg[5].imag()
+		 + aux_reg[6].real()*aux_reg[6].real() + aux_reg[6].imag()*aux_reg[6].imag()
+		 + aux_reg[7].real()*aux_reg[7].real() + aux_reg[7].imag()*aux_reg[7].imag()
+		 + aux_reg[8].real()*aux_reg[8].real() + aux_reg[8].imag()*aux_reg[8].imag()
+		 + aux_reg[9].real()*aux_reg[9].real() + aux_reg[9].imag()*aux_reg[9].imag();
+
+	}
 	 mu_effective = hls::divide((inner_prod) 1, innerP);
 
 	updateWeightLoop: for (int i=0; i <N; i++){

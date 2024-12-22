@@ -1,0 +1,258 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-3'
+INFO: [HLS 200-1510] Running: create_clock -period 5ns 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0.01ns 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.01ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 122.855 MB.
+INFO: [HLS 200-10] Analyzing design file 'nlms.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 39.41 seconds. CPU system time: 2.85 seconds. Elapsed time: 40.78 seconds; current allocated memory: 125.691 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:25:10)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:40:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:26:9)
+INFO: [HLS 214-131] Inlining function 'adaptive_filter::filter_fix(std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:28:10)
+INFO: [HLS 214-131] Inlining function 'adaptive_filter::update_weights_normalized(ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)0, 0>, ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)0, 0>)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:29:6)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<65, 33, (ap_q_mode)5, (ap_o_mode)3, 0> hls_internal::generic_divide<65, 33>(ap_fixed<65, 33, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<65, 33, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0> hls_internal::generic_divide<64, 32>(ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_fmod_rem_quo_remainder_divide_apfixed.h:61:0)
+INFO: [HLS 214-178] Inlining function 'ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0> hls_internal::generic_divide<64, 32>(ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0> hls::divide<64, 32>(ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_math.h:2661:0)
+INFO: [HLS 214-178] Inlining function 'adaptive_filter::set_mu(ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0> hls::divide<64, 32>(ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:6:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-270] Inferring complete partitioning for array 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)::lms (.0.0)' on dimension 1 (nlms.cpp:15:0)
+INFO: [HLS 214-270] Inferring complete partitioning for array 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)::lms (.0.1)' on dimension 1 (nlms.cpp:15:0)
+INFO: [HLS 214-270] Inferring complete partitioning for array 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)::lms (.1)' on dimension 1 (nlms.cpp:15:0)
+INFO: [HLS 214-270] Inferring complete partitioning for array 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)::lms (.2)' on dimension 1 (nlms.cpp:15:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 6.05 seconds. CPU system time: 0.63 seconds. Elapsed time: 6.68 seconds; current allocated memory: 127.864 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 127.867 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.28 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.33 seconds; current allocated memory: 148.795 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.57 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.59 seconds; current allocated memory: 178.727 MB.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'nlms_module_3tap' (./adaptive_filter.h:42:42).
+INFO: [HLS 200-489] Unrolling loop 'fir_loop' (./adaptive_filter.h:52) in function 'nlms_module_3tap' completely with a factor of 11.
+INFO: [HLS 200-489] Unrolling loop 'updateWeightLoop' (./adaptive_filter.h:123) in function 'nlms_module_3tap' completely with a factor of 11.
+INFO: [XFORM 203-101] Partitioning array 'lms.aux_reg._M_real.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'lms.aux_reg._M_imag.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'lms.weights_real.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'lms.weights_imag.V'  in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (nlms.cpp:42:1) in function 'nlms_module_3tap'... converting 49 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'nlms_module_3tap' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_fmod_rem_quo_remainder_divide_apfixed.h:42:6)...37 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1.78 seconds. CPU system time: 0.05 seconds. Elapsed time: 1.83 seconds; current allocated memory: 231.431 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.65 seconds. CPU system time: 0 seconds. Elapsed time: 0.66 seconds; current allocated memory: 244.255 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nlms_module_3tap' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nlms_module_3tap' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'nlms_module_3tap'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_9_write_ln717') of variable 'select_ln340_43' on static variable 'lms_weights_real_V_9' and 'load' operation ('lms_weights_real_V_9_load') on static variable 'lms_weights_real_V_9'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_9_write_ln717') of variable 'select_ln340_43' on static variable 'lms_weights_real_V_9' and 'load' operation ('lms_weights_real_V_9_load') on static variable 'lms_weights_real_V_9'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_9_write_ln717') of variable 'select_ln340_43' on static variable 'lms_weights_real_V_9' and 'load' operation ('lms_weights_real_V_9_load') on static variable 'lms_weights_real_V_9'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_9_write_ln717') of variable 'select_ln340_43' on static variable 'lms_weights_real_V_9' and 'load' operation ('lms_weights_real_V_9_load') on static variable 'lms_weights_real_V_9'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 19, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_9_write_ln717') of variable 'select_ln340_43' on static variable 'lms_weights_real_V_9' and 'load' operation ('lms_weights_real_V_9_load') on static variable 'lms_weights_real_V_9'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 23, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_9_write_ln717') of variable 'select_ln340_43' on static variable 'lms_weights_real_V_9' and 'load' operation ('lms_weights_real_V_9_load') on static variable 'lms_weights_real_V_9'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 25, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_9_write_ln717') of variable 'select_ln340_43' on static variable 'lms_weights_real_V_9' and 'load' operation ('lms_weights_real_V_9_load') on static variable 'lms_weights_real_V_9'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 26, distance = 1, offset = 0) between 'store' operation ('lms_weights_imag_V_9_write_ln717') of variable 'select_ln340_44' on static variable 'lms_weights_imag_V_9' and 'load' operation ('lms_weights_imag_V_9_load') on static variable 'lms_weights_imag_V_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 27, Depth = 99, function 'nlms_module_3tap'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 10.83 seconds. CPU system time: 0.07 seconds. Elapsed time: 10.91 seconds; current allocated memory: 249.551 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3.96 seconds. CPU system time: 0.04 seconds. Elapsed time: 4.01 seconds; current allocated memory: 255.646 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nlms_module_3tap' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/main_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/main_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/main_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/main_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/aux_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/aux_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/aux_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/aux_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/output_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/output_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/output_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/output_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/mu' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nlms_module_3tap' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_real_V_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_imag_V_9' is power-on initialization.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.01ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5ns -name default 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0.01ns 
+INFO: [HLS 200-1510] Running: set_directive_top -name nlms_module_3tap nlms_module_3tap 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 124.261 MB.
+INFO: [HLS 200-10] Analyzing design file 'nlms.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 102.94 seconds. CPU system time: 7.04 seconds. Elapsed time: 108.92 seconds; current allocated memory: 126.774 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:25:10)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::write(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul> const&)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:40:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>::read(hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>&)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:26:9)
+INFO: [HLS 214-131] Inlining function 'adaptive_filter::filter_fix(std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:28:10)
+INFO: [HLS 214-131] Inlining function 'adaptive_filter::update_weights_normalized(ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)0, 0>, ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)0, 0>)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:29:6)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<65, 33, (ap_q_mode)5, (ap_o_mode)3, 0> hls_internal::generic_divide<65, 33>(ap_fixed<65, 33, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<65, 33, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0> hls_internal::generic_divide<64, 32>(ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_fmod_rem_quo_remainder_divide_apfixed.h:61:0)
+INFO: [HLS 214-178] Inlining function 'ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0> hls_internal::generic_divide<64, 32>(ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0> hls::divide<64, 32>(ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_math.h:2661:0)
+INFO: [HLS 214-178] Inlining function 'adaptive_filter::set_mu(ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0> hls::divide<64, 32>(ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)' (nlms.cpp:6:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-270] Inferring complete partitioning for array 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)::lms (.0.0)' on dimension 1 (nlms.cpp:15:0)
+INFO: [HLS 214-270] Inferring complete partitioning for array 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)::lms (.0.1)' on dimension 1 (nlms.cpp:15:0)
+INFO: [HLS 214-270] Inferring complete partitioning for array 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)::lms (.1)' on dimension 1 (nlms.cpp:15:0)
+INFO: [HLS 214-270] Inferring complete partitioning for array 'nlms_module_3tap(hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<std::complex<ap_fixed<16, 16, (ap_q_mode)1, (ap_o_mode)0, 0> >, 0ul, 0ul, 0ul>, 0>&, ap_ufixed<32, 0, (ap_q_mode)5, (ap_o_mode)0, 0>)::lms (.2)' on dimension 1 (nlms.cpp:15:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 18.44 seconds. CPU system time: 1.83 seconds. Elapsed time: 20.79 seconds; current allocated memory: 129.755 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 129.758 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.69 seconds. CPU system time: 0.1 seconds. Elapsed time: 0.93 seconds; current allocated memory: 150.687 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1.34 seconds. CPU system time: 0.07 seconds. Elapsed time: 1.41 seconds; current allocated memory: 180.617 MB.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'nlms_module_3tap' (./adaptive_filter.h:42:42).
+INFO: [HLS 200-489] Unrolling loop 'fir_loop' (./adaptive_filter.h:52) in function 'nlms_module_3tap' completely with a factor of 11.
+INFO: [HLS 200-489] Unrolling loop 'updateWeightLoop' (./adaptive_filter.h:123) in function 'nlms_module_3tap' completely with a factor of 11.
+INFO: [XFORM 203-101] Partitioning array 'lms.aux_reg._M_real.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'lms.aux_reg._M_imag.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'lms.weights_real.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'lms.weights_imag.V'  in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (nlms.cpp:42:1) in function 'nlms_module_3tap'... converting 49 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'nlms_module_3tap' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_fmod_rem_quo_remainder_divide_apfixed.h:42:6)...37 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 4.09 seconds. CPU system time: 0.06 seconds. Elapsed time: 4.19 seconds; current allocated memory: 233.316 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.56 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.59 seconds; current allocated memory: 246.152 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nlms_module_3tap' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nlms_module_3tap' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_1) to 3 in order to utilize available DSP registers.
+WARNING: [HLS 200-1015] Estimated delay Estimated delay (5.27ns)  of 'udiv' operation ('udiv_ln712') exceeds the target cycle time (target cycle time: 5ns, clock uncertainty: 0.01ns, effective cycle time: 4.99ns).
+
+INFO: [SCHED 204-61] Pipelining function 'nlms_module_3tap'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_9_write_ln717') of variable 'select_ln340_43' on static variable 'lms_weights_real_V_9' and 'load' operation ('lms_weights_real_V_9_load') on static variable 'lms_weights_real_V_9'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_9_write_ln717') of variable 'select_ln340_43' on static variable 'lms_weights_real_V_9' and 'load' operation ('lms_weights_real_V_9_load') on static variable 'lms_weights_real_V_9'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_9_write_ln717') of variable 'select_ln340_43' on static variable 'lms_weights_real_V_9' and 'load' operation ('lms_weights_real_V_9_load') on static variable 'lms_weights_real_V_9'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_9_write_ln717') of variable 'select_ln340_43' on static variable 'lms_weights_real_V_9' and 'load' operation ('lms_weights_real_V_9_load') on static variable 'lms_weights_real_V_9'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 0) between 'store' operation ('lms_weights_real_V_9_write_ln717') of variable 'select_ln340_43' on static variable 'lms_weights_real_V_9' and 'load' operation ('lms_weights_real_V_9_load') on static variable 'lms_weights_real_V_9'.
+WARNING: [HLS 200-880] The II Violation in module 'nlms_module_3tap' (function 'nlms_module_3tap'): Unable to enforce a carried dependence constraint (II = 36, distance = 1, offset = 0) between 'store' operation ('lms_weights_imag_V_9_write_ln717') of variable 'select_ln340_44' on static variable 'lms_weights_imag_V_9' and 'load' operation ('lms_weights_imag_V_9_load') on static variable 'lms_weights_imag_V_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 37, Depth = 103, function 'nlms_module_3tap'
+WARNING: [HLS 200-871] Estimated clock period (5.272ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.01ns, effective delay budget: 4.99ns).
+WARNING: [HLS 200-1016] The critical path in module 'nlms_module_3tap' consists of the following:	'udiv' operation ('udiv_ln712') [801]  (5.27 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 32.61 seconds. CPU system time: 0.57 seconds. Elapsed time: 33.45 seconds; current allocated memory: 251.519 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 7.67 seconds. CPU system time: 0.16 seconds. Elapsed time: 7.83 seconds; current allocated memory: 257.827 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nlms_module_3tap' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/main_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/main_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/main_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/main_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/aux_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/aux_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/aux_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/aux_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/output_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/output_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/output_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/output_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'nlms_module_3tap/mu' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nlms_module_3tap' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_real_V_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_imag_V_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lms_weights_real_V_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lms_weights_imag_V_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_real_V_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lms_aux_reg_M_imag_V_8' is power-on initialization.

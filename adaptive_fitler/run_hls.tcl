@@ -20,5 +20,6 @@ open_solution -reset lms_1tap
 # Define technology and clock rate
 set_part {xc7z020clg484}
 create_clock -period "5ns"
+set_clock_uncertainty "0.01ns"
 
 csynth_design
